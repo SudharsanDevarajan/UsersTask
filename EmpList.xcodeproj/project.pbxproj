@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0A632AF7289AAC0C001A140F /* EmpListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A632AF6289AAC0C001A140F /* EmpListApp.swift */; };
-		0A632AF9289AAC0C001A140F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A632AF8289AAC0C001A140F /* ContentView.swift */; };
 		0A632AFB289AAC0D001A140F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A632AFA289AAC0D001A140F /* Assets.xcassets */; };
 		0A632AFE289AAC0D001A140F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A632AFD289AAC0D001A140F /* Preview Assets.xcassets */; };
 		0A632B00289AAC0D001A140F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A632AFF289AAC0D001A140F /* Persistence.swift */; };
@@ -25,7 +24,6 @@
 /* Begin PBXFileReference section */
 		0A632AF3289AAC0C001A140F /* EmpList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmpList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A632AF6289AAC0C001A140F /* EmpListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpListApp.swift; sourceTree = "<group>"; };
-		0A632AF8289AAC0C001A140F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A632AFA289AAC0D001A140F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A632AFD289AAC0D001A140F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A632AFF289AAC0D001A140F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -70,14 +68,12 @@
 		0A632AF5289AAC0C001A140F /* EmpList */ = {
 			isa = PBXGroup;
 			children = (
+				0A632AF6289AAC0C001A140F /* EmpListApp.swift */,
+				0A632B1F289ADE13001A140F /* Views */,
 				0A632B1C289AD4B6001A140F /* Service */,
 				0A632B1B289AD10E001A140F /* ViewModel */,
 				0A632B17289AD088001A140F /* Model */,
 				0A632B16289ABBFD001A140F /* Info.plist */,
-				0A632B13289AB3DE001A140F /* EmployeeDetail */,
-				0A632B09289AAC22001A140F /* EmployeeList */,
-				0A632AF6289AAC0C001A140F /* EmpListApp.swift */,
-				0A632AF8289AAC0C001A140F /* ContentView.swift */,
 				0A632AFA289AAC0D001A140F /* Assets.xcassets */,
 				0A632AFF289AAC0D001A140F /* Persistence.swift */,
 				0A632B01289AAC0D001A140F /* EmpList.xcdatamodeld */,
@@ -92,22 +88,6 @@
 				0A632AFD289AAC0D001A140F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		0A632B09289AAC22001A140F /* EmployeeList */ = {
-			isa = PBXGroup;
-			children = (
-				0A632B0C289AAC80001A140F /* EmpView.swift */,
-			);
-			path = EmployeeList;
-			sourceTree = "<group>";
-		};
-		0A632B13289AB3DE001A140F /* EmployeeDetail */ = {
-			isa = PBXGroup;
-			children = (
-				0A632B14289AB3F4001A140F /* EmpDetailView.swift */,
-			);
-			path = EmployeeDetail;
 			sourceTree = "<group>";
 		};
 		0A632B17289AD088001A140F /* Model */ = {
@@ -133,6 +113,15 @@
 				0A632B1D289AD4C4001A140F /* UserDataService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		0A632B1F289ADE13001A140F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A632B14289AB3F4001A140F /* EmpDetailView.swift */,
+				0A632B0C289AAC80001A140F /* EmpView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +202,6 @@
 			files = (
 				0A632B00289AAC0D001A140F /* Persistence.swift in Sources */,
 				0A632B12289AAE68001A140F /* EmpModel.swift in Sources */,
-				0A632AF9289AAC0C001A140F /* ContentView.swift in Sources */,
 				0A632B0B289AAC78001A140F /* EmpViewModel.swift in Sources */,
 				0A632B03289AAC0D001A140F /* EmpList.xcdatamodeld in Sources */,
 				0A632AF7289AAC0C001A140F /* EmpListApp.swift in Sources */,
