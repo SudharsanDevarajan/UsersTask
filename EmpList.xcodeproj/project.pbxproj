@@ -13,6 +13,13 @@
 		0A632AFE289AAC0D001A140F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A632AFD289AAC0D001A140F /* Preview Assets.xcassets */; };
 		0A632B00289AAC0D001A140F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A632AFF289AAC0D001A140F /* Persistence.swift */; };
 		0A632B03289AAC0D001A140F /* EmpList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A632B01289AAC0D001A140F /* EmpList.xcdatamodeld */; };
+		0A632B0B289AAC78001A140F /* EmpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A632B0A289AAC78001A140F /* EmpViewModel.swift */; };
+		0A632B0D289AAC80001A140F /* EmpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A632B0C289AAC80001A140F /* EmpView.swift */; };
+		0A632B10289AAE46001A140F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0A632B0F289AAE46001A140F /* Kingfisher */; };
+		0A632B12289AAE68001A140F /* EmpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A632B11289AAE68001A140F /* EmpModel.swift */; };
+		0A632B15289AB3F4001A140F /* EmpDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A632B14289AB3F4001A140F /* EmpDetailView.swift */; };
+		0A632B1A289AD09F001A140F /* UserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A632B18289AD09F001A140F /* UserModel.xcdatamodeld */; };
+		0A632B1E289AD4C4001A140F /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A632B1D289AD4C4001A140F /* UserDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +30,13 @@
 		0A632AFD289AAC0D001A140F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A632AFF289AAC0D001A140F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0A632B02289AAC0D001A140F /* EmpList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EmpList.xcdatamodel; sourceTree = "<group>"; };
+		0A632B0A289AAC78001A140F /* EmpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpViewModel.swift; sourceTree = "<group>"; };
+		0A632B0C289AAC80001A140F /* EmpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpView.swift; sourceTree = "<group>"; };
+		0A632B11289AAE68001A140F /* EmpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpModel.swift; sourceTree = "<group>"; };
+		0A632B14289AB3F4001A140F /* EmpDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpDetailView.swift; sourceTree = "<group>"; };
+		0A632B16289ABBFD001A140F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0A632B19289AD09F001A140F /* UserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserModel.xcdatamodel; sourceTree = "<group>"; };
+		0A632B1D289AD4C4001A140F /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A632B10289AAE46001A140F /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +70,12 @@
 		0A632AF5289AAC0C001A140F /* EmpList */ = {
 			isa = PBXGroup;
 			children = (
+				0A632B1C289AD4B6001A140F /* Service */,
+				0A632B1B289AD10E001A140F /* ViewModel */,
+				0A632B17289AD088001A140F /* Model */,
+				0A632B16289ABBFD001A140F /* Info.plist */,
+				0A632B13289AB3DE001A140F /* EmployeeDetail */,
+				0A632B09289AAC22001A140F /* EmployeeList */,
 				0A632AF6289AAC0C001A140F /* EmpListApp.swift */,
 				0A632AF8289AAC0C001A140F /* ContentView.swift */,
 				0A632AFA289AAC0D001A140F /* Assets.xcassets */,
@@ -73,6 +94,47 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0A632B09289AAC22001A140F /* EmployeeList */ = {
+			isa = PBXGroup;
+			children = (
+				0A632B0C289AAC80001A140F /* EmpView.swift */,
+			);
+			path = EmployeeList;
+			sourceTree = "<group>";
+		};
+		0A632B13289AB3DE001A140F /* EmployeeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0A632B14289AB3F4001A140F /* EmpDetailView.swift */,
+			);
+			path = EmployeeDetail;
+			sourceTree = "<group>";
+		};
+		0A632B17289AD088001A140F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A632B11289AAE68001A140F /* EmpModel.swift */,
+				0A632B18289AD09F001A140F /* UserModel.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A632B1B289AD10E001A140F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0A632B0A289AAC78001A140F /* EmpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0A632B1C289AD4B6001A140F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0A632B1D289AD4C4001A140F /* UserDataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,6 +151,9 @@
 			dependencies = (
 			);
 			name = EmpList;
+			packageProductDependencies = (
+				0A632B0F289AAE46001A140F /* Kingfisher */,
+			);
 			productName = EmpList;
 			productReference = 0A632AF3289AAC0C001A140F /* EmpList.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +182,9 @@
 				Base,
 			);
 			mainGroup = 0A632AEA289AAC0C001A140F;
+			packageReferences = (
+				0A632B0E289AAE46001A140F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 0A632AF4289AAC0C001A140F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,9 +212,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A632B00289AAC0D001A140F /* Persistence.swift in Sources */,
+				0A632B12289AAE68001A140F /* EmpModel.swift in Sources */,
 				0A632AF9289AAC0C001A140F /* ContentView.swift in Sources */,
+				0A632B0B289AAC78001A140F /* EmpViewModel.swift in Sources */,
 				0A632B03289AAC0D001A140F /* EmpList.xcdatamodeld in Sources */,
 				0A632AF7289AAC0C001A140F /* EmpListApp.swift in Sources */,
+				0A632B1E289AD4C4001A140F /* UserDataService.swift in Sources */,
+				0A632B15289AB3F4001A140F /* EmpDetailView.swift in Sources */,
+				0A632B0D289AAC80001A140F /* EmpView.swift in Sources */,
+				0A632B1A289AD09F001A140F /* UserModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +352,7 @@
 				DEVELOPMENT_TEAM = 3P9LUAZ46A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EmpList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -307,6 +382,7 @@
 				DEVELOPMENT_TEAM = 3P9LUAZ46A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EmpList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -348,6 +424,25 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		0A632B0E289AAE46001A140F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A632B0F289AAE46001A140F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A632B0E289AAE46001A140F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin XCVersionGroup section */
 		0A632B01289AAC0D001A140F /* EmpList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
@@ -356,6 +451,16 @@
 			);
 			currentVersion = 0A632B02289AAC0D001A140F /* EmpList.xcdatamodel */;
 			path = EmpList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		0A632B18289AD09F001A140F /* UserModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0A632B19289AD09F001A140F /* UserModel.xcdatamodel */,
+			);
+			currentVersion = 0A632B19289AD09F001A140F /* UserModel.xcdatamodel */;
+			path = UserModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

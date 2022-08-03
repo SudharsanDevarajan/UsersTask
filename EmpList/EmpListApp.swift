@@ -13,7 +13,7 @@ struct EmpListApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EmpView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
